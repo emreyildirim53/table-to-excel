@@ -1,7 +1,6 @@
 $(function () {
-
 	var table = $('#table'),
-		downloadButton = $('#btnDownload');
+	    downloadButton = $('#btnDownload');
 
 	downloadButton.on('click', function () {
         table.tableToExcel({

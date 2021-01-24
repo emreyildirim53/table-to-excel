@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <style type="text/css">
+	        .colorRed {
+	            color: red;
+	        }
+
+	        .colorBlue {
+	            color: blue;
+	        }
+
+	        .colorYellow {
+	            color: yellow;
+	        }
+
+	        .bgColorRed {
+	            background-color: red;
+	        }
+
+	        .bgColorBlue {
+	            background-color: blue;
+	        }
+
+	        .bgColorYellow {
+	            background-color: yellow;
+	        }
+
+	    </style>
+	</head>
+	<body>
+		<table id="table" class="colorRed">
+		    <tr class="colorYellow">
+		        <th class="colorRed">Entry Header 1</th>
+		        <th class="bgColorBlue">Entry Header 2</th>
+		        <th class="colorBlue bgColorYellow">Entry Header 3</th>
+		        <th class="colorBlue">Entry Header 4</th>
+		    </tr>
+		    <tr>
+		        <td>Entry First Line 1</td>
+		        <td class="colorRed">Entry First Line 2</td>
+		        <td>Entry First Line 3</td>
+		        <td class="colorBlue">Entry First Line 4</td>
+		    </tr>
+		    <tr>
+		        <td class="bgColorBlue">Entry Line 1</td>
+		        <td class="bgColorYellow">Entry Line 2</td>
+		        <td class="bgColorBlue">Entry Line 3</td>
+		        <td class="colorRed bgColorBlue">Entry Line 4</td>
+		    </tr>
+		    <tr>
+		        <td>Entry Last Line 1</td>
+		        <td>Entry Last Line 2</td>
+		        <td class="colorRed">Entry Last Line 3</td>
+		        <td class="bgColorYellow">Entry Last Line 4</td>
+		    </tr>
+		</table>
+
+		 <button id="btnDownload">Download Table As Excel</button>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="js/tableToExcel.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>
